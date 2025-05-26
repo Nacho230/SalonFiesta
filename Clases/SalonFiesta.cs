@@ -27,7 +27,7 @@ namespace Proyecto_n2_SalonFiesta
 		
 		private ArrayList eventos;
 		//private int cantEventos;
- 		
+		
 		
 		public SalonFiesta(string nombre){ //constructor con argumentos, inicializamos las listas y nombre
 			
@@ -51,17 +51,26 @@ namespace Proyecto_n2_SalonFiesta
 			
 		}
 		
+		
+		
 		public void EliminarEmpleado(int dni){
+			
+			Empleado empleadoEliminar = null;
 			
 			foreach (Empleado e in empleados) {
 				
 				if (e.Dni == dni) {
 					
-					empleados.Remove(e);
-				}else{
-					Console.WriteLine("No existe");
+					empleadoEliminar = e;
+					
 				}
 				
+			}
+			
+			if (empleadoEliminar != null) {
+				empleados.Remove(empleadoEliminar);
+			}else{
+				Console.WriteLine("No existe");
 			}
 			
 		}
@@ -83,14 +92,11 @@ namespace Proyecto_n2_SalonFiesta
 			foreach (Empleado e in empleados) {
 				
 				if (e.Dni == dni) {
-					
-					return empleados.Contains(e);
+					return true;
 				}
-				else{
-					return false;
-				}
-				
 			}
+			
+			return false;
 			
 		}
 		
@@ -111,16 +117,22 @@ namespace Proyecto_n2_SalonFiesta
 		
 		public void EliminarServicio(string nombre){
 			
+			Servicio servicioEliminar = null;
+			
 			foreach (Servicio s in serviciosDisponibles) {
 				
 				if (s.Nombre == nombre) {
 					
-					serviciosDisponibles.Remove(s);
+					servicioEliminar = s;
 					
-				}else{
-					Console.WriteLine("No existe un servicio con ese nombre pues");
 				}
 				
+			}
+			
+			if (servicioEliminar != null) {
+				serviciosDisponibles.Remove(servicioEliminar);
+			}else{
+				Console.WriteLine("No existe un servicio con ese nombre pues");
 			}
 			
 		}
@@ -137,19 +149,18 @@ namespace Proyecto_n2_SalonFiesta
 			
 		}
 		
-		public bool ExisteEmpleado(string nombre){
+		public bool ExisteServicio(string nombre){
 			
 			foreach (Servicio s in serviciosDisponibles) {
 				
 				if (s.Nombre == nombre) {
 					
-					return serviciosDisponibles.Contains(s);
-				}
-				else{
-					return false;
+					return true;
 				}
 				
 			}
+			
+			return false;
 			
 		}
 		
@@ -169,16 +180,23 @@ namespace Proyecto_n2_SalonFiesta
 		
 		public void EliminarEvento(int dni){
 			
+			Evento eventoEliminar = null;
+			
 			foreach (Evento e in eventos) {
 				
 				if (e.DniCliente == dni) {
-					eventos.Remove(e);
+					
+					eventoEliminar = e;
 					
 				}else{
 					Console.WriteLine("No existe un evento con ese dni");
 					
 				}
 				
+			}
+			
+			if (eventoEliminar != null) {
+				eventos.Remove(eventoEliminar);
 			}
 			
 		}
@@ -201,13 +219,13 @@ namespace Proyecto_n2_SalonFiesta
 				
 				if (e.DniCliente == dni) {
 					
-					return eventos.Contains(e);
-				}
-				else{
-					return false;
+					return true;
 				}
 				
+				
 			}
+			
+			return false;
 			
 		}
 		

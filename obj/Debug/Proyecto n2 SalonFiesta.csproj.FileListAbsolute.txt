@@ -1,0 +1,6 @@
+C:\Users\nacho\Documents\SharpDevelop Projects\Proyecto n2 SalonFiesta\obj\Debug\Proyecto n2 SalonFiesta.csprojResolveAssemblyReference.cache
+C:\Users\nacho\Documents\SharpDevelop Projects\Proyecto n2 SalonFiesta\bin\Debug\Proyecto n2 SalonFiesta.exe.config
+C:\Users\nacho\Documents\SharpDevelop Projects\Proyecto n2 SalonFiesta\bin\Debug\Proyecto n2 SalonFiesta.exe
+C:\Users\nacho\Documents\SharpDevelop Projects\Proyecto n2 SalonFiesta\bin\Debug\Proyecto n2 SalonFiesta.pdb
+C:\Users\nacho\Documents\SharpDevelop Projects\Proyecto n2 SalonFiesta\obj\Debug\Proyecto n2 SalonFiesta.exe
+C:\Users\nacho\Documents\SharpDevelop Projects\Proyecto n2 SalonFiesta\obj\Debug\Proyecto n2 SalonFiesta.pdb

@@ -41,7 +41,7 @@ namespace Proyecto_n2_SalonFiesta
 			this.Fecha = fecha;
 			this.Horario = horario;
 			this.Tipo = tipo;
-			tipo.MontoAnticipo = montoAnticipo;
+			this.MontoAnticipo = montoAnticipo;
 			
 			EncargadoEvento = new Encargado();
 			

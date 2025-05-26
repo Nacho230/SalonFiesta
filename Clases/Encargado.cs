@@ -13,8 +13,7 @@ namespace Proyecto_n2_SalonFiesta
 	/// <summary>
 	/// Description of Encargado.
 	/// </summary>
-	public class Encargado : Empleado
-	{
+	public class Encargado : Empleado{
 		
 		public double Plus{get;set;}
 		
@@ -34,18 +33,19 @@ namespace Proyecto_n2_SalonFiesta
 		
 		public double SueldoTotal(){
 			
-			return (sueldo+plus);
+			return (Sueldo+Plus);
 			
 		}
 			
 		
 		}
-		
-	
-		
-	}
-		
-		
-		
-	
 }
+		
+	
+		
+	
+		
+		
+		
+	
+
